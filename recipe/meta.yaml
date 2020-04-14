@@ -1,6 +1,6 @@
 {% set name = "libensemble" %}
 {% set version = "0.6.0" %}
-{% set build = 3 %}
+{% set build = 4 %}
 {% set sha256 = "bf0483a05bfac383f82fd2a79ca5151af7a2337e07b2392eee2e6396c250357e" %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
@@ -48,6 +48,7 @@ requirements:
     - python
     - setuptools
   run:
+    - {{ mpi }}  # [mpi != 'nompi']
     - nlopt
     - numpy
     - petsc4py   # [mpi != 'nompi' and not win]
