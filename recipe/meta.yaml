@@ -48,6 +48,7 @@ requirements:
     - python
     - setuptools
   run:
+    - {{ mpi }}  # [mpi != 'nompi']
     - nlopt
     - numpy
     - petsc4py   # [mpi != 'nompi' and not win]
