@@ -1,7 +1,15 @@
 {% set name = "libensemble" %}
 {% set version = "0.6.0" %}
-{% set build = 1 %}
+{% set build = 2 %}
 {% set sha256 = "bf0483a05bfac383f82fd2a79ca5151af7a2337e07b2392eee2e6396c250357e" %}
+
+# ensure mpi is defined (needed for conda-smithy recipe-lint)
+{% set mpi = mpi or 'nompi' %}
+
+# prioritize nompi variant via build number
+{% if mpi == 'nompi' %}
+{% set build = build + 100 %}
+{% endif %}
 
 package:
   name: {{ name|lower }}
@@ -17,6 +25,19 @@ build:
   # noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
+  # add build string so packages can depend on
+  # mpi or nompi variants
+  # dependencies:
+  # `pkg * mpi_mpich_*` for mpich
+  # `pkg * mpi_*` for any mpi
+  # `pkg * nompi_*` for no mpi
+  {% if mpi == 'nompi' %}
+  {% set mpi_prefix = "nompi" %}
+  {% else %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+  {% endif %}
+  string: "{{ mpi_prefix }}_py{{ py }}h{{ PKG_HASH }}_{{ build }}"
+
 requirements:
   host:
     - pip
@@ -25,9 +46,10 @@ requirements:
   run:
     - nlopt
     - numpy
-    - petsc4py  # [not win]
+    - petsc4py   # [mpi != 'nompi' and not win]
     - python
     - scipy
+    - mpi4py     # [mpi != 'nompi']
 
 test:
   imports:
