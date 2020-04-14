@@ -38,6 +38,10 @@ build:
   {% endif %}
   string: "{{ mpi_prefix }}_py{{ py }}h{{ PKG_HASH }}_{{ build }}"
 
+  run_exports:
+    # strict runtime dependency on build-time MPI flavor
+    - {{ name }} * {{ mpi_prefix }}_*
+
 requirements:
   host:
     - pip
