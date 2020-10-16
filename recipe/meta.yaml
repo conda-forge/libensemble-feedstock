@@ -52,6 +52,7 @@ requirements:
     - nlopt
     - numpy
     - petsc4py   # [mpi != 'nompi' and not win]
+    - psutil
     - python
     - scipy
     - mpi4py     # [mpi != 'nompi']
