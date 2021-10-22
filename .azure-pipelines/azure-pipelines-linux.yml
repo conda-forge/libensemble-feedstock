@@ -44,6 +44,42 @@ jobs:
         CONFIG: linux_64_mpiopenmpipython3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_ppc64le_mpimpichpython3.7.____cpython:
+        CONFIG: linux_ppc64le_mpimpichpython3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpimpichpython3.8.____cpython:
+        CONFIG: linux_ppc64le_mpimpichpython3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpimpichpython3.9.____cpython:
+        CONFIG: linux_ppc64le_mpimpichpython3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpinompipython3.7.____cpython:
+        CONFIG: linux_ppc64le_mpinompipython3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpinompipython3.8.____cpython:
+        CONFIG: linux_ppc64le_mpinompipython3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpinompipython3.9.____cpython:
+        CONFIG: linux_ppc64le_mpinompipython3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpiopenmpipython3.7.____cpython:
+        CONFIG: linux_ppc64le_mpiopenmpipython3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpiopenmpipython3.8.____cpython:
+        CONFIG: linux_ppc64le_mpiopenmpipython3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_mpiopenmpipython3.9.____cpython:
+        CONFIG: linux_ppc64le_mpiopenmpipython3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
   timeoutInMinutes: 360
 
   steps:
