@@ -59,6 +59,9 @@ requirements:
     - mpmath
     - pyyaml
     - setuptools
+    - pydantic
+    - toml
+    - pyyaml
 
 test:
   imports:
