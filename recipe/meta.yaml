@@ -59,7 +59,7 @@ requirements:
     - mpmath
     - pyyaml
     - setuptools
-    - pydantic
+    - pydantic <2
     - toml
     - pyyaml
 
