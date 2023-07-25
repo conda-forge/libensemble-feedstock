@@ -20,6 +20,11 @@ libEnsemble aims for: Extreme scaling, Resilience/fault tolerance,
 Monitoring/killing jobs (and recovering resources), Portability and
 flexibility, Exploitation of persistent data/control flow.
 
+libEnsemble has strong support for heterogeneous workflows.  Since v0.10.0, 
+users can specify "num_procs" and "num_gpus" in the generator for each
+evaluation and the correct settings will be applied for any platform with
+Nvidia, AMD, or Intel GPUs.
+
 
 Current build status
 ====================
