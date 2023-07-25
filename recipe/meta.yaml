@@ -60,7 +60,7 @@ requirements:
     - pyyaml
     - setuptools
     - pydantic <2
-    - toml
+    - tomli
     - pyyaml
 
 test:
