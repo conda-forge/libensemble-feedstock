@@ -20,11 +20,6 @@ libEnsemble aims for: Extreme scaling, Resilience/fault tolerance,
 Monitoring/killing jobs (and recovering resources), Portability and
 flexibility, Exploitation of persistent data/control flow.
 
-libEnsemble has strong support for heterogeneous workflows.  Since v0.10.0, 
-users can specify "num_procs" and "num_gpus" in the generator for each
-evaluation and the correct settings will be applied for any platform with
-Nvidia, AMD, or Intel GPUs.
-
 
 Current build status
 ====================
@@ -65,13 +60,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichpython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_mpimpichpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -104,13 +92,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompipython3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_mpinompipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompipython3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -149,13 +130,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpipython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_mpiopenmpipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -188,13 +162,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichpython3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_mpimpichpython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpimpichpython3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -233,13 +200,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_mpinompipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpinompipython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_aarch64_mpinompipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -272,13 +232,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpipython3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_mpiopenmpipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_mpiopenmpipython3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -317,13 +270,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpimpichpython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpimpichpython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_ppc64le_mpimpichpython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -356,13 +302,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipython3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_mpinompipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpinompipython3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -401,13 +340,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_mpiopenmpipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_mpiopenmpipython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_ppc64le_mpiopenmpipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -440,13 +372,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpython3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_mpimpichpython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichpython3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -485,13 +410,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompipython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_mpinompipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -527,13 +445,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpipython3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpiopenmpipython3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_mpiopenmpipython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
@@ -566,13 +477,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9464&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libensemble-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.8.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
