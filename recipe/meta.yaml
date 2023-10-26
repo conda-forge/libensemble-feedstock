@@ -1,6 +1,6 @@
 {% set name = "libensemble" %}
 {% set version = "1.0.0" %}
-{% set build = 1 %}
+{% set build = 2 %}
 {% set sha256 = "e4dc1b3956fdd3b897836a78dcc7ced1d6413c936463dd51932e0e1f0239cac0" %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
@@ -62,7 +62,7 @@ requirements:
     - mpmath
     - pyyaml
     - setuptools
-    - pydantic <2
+    - pydantic ==1.*
     - tomli
     - pyyaml
 
