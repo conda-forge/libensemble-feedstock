@@ -1,7 +1,7 @@
 {% set name = "libensemble" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set build = 0 %}
-{% set sha256 = "1c2aa72c3dff0e5e90b17dbc3f04c6317d091af0924cfcda88b2933ae05f6835" %}
+{% set sha256 = "c8cf30eff2d9bfc5aff21f22b9bbeed2d252013455afdb74c423170fb11bfb99" %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
