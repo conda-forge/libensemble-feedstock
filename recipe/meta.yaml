@@ -2,6 +2,7 @@
 {% set version = "1.5.0" %}
 {% set build = 0 %}
 {% set sha256 = "d6df278197fede42ec8fd5ca0d29932745d4e564c7e0038d33a50aabfd0aa852" %}
+{% set python_min = "3.10" %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
@@ -44,7 +45,7 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
+    - pythonn >={{ python_min }}             # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
@@ -56,7 +57,7 @@ requirements:
     - numpy
     - petsc4py   # [mpi != 'nompi' and not win]
     - psutil
-    - python
+    - python >={{ python_min }}
     - scipy
     - mpi4py     # [mpi != 'nompi']
     - mpmath
@@ -69,7 +70,8 @@ requirements:
 test:
   imports:
     - libensemble.libE
-
+  requires:
+    - python >={{ python_min }}
 about:
   home: https://libensemble.readthedocs.io
   license: BSD-3-Clause
