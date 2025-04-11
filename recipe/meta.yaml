@@ -48,7 +48,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
-    - python
+    - python >=3.10 
     - setuptools
   run:
     - {{ mpi }}  # [mpi != 'nompi']
