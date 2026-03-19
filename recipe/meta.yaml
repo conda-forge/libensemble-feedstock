@@ -65,7 +65,7 @@ requirements:
     - pydantic >=2
     - tomli
     - pyyaml
-    - gest_api
+    - gest-api
 
 test:
   imports:
