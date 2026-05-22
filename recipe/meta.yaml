@@ -62,9 +62,10 @@ requirements:
     - mpmath
     - pyyaml
     - setuptools
-    - pydantic >=1.10
+    - pydantic >=2
     - tomli
     - pyyaml
+    - gest-api
 
 test:
   imports:
